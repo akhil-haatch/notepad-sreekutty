@@ -1,0 +1,28 @@
+<div class="row">
+    <div>
+        <div class="center">
+            <img height="100%" width="100%"  src="assets/notepadbg.webp">
+        </div>
+    </div>
+<div class="welcomeText"> <h1> Welcome to Notepad...! </h1></div>
+    <div class="center bringToFront">
+        <div  class="card shadow p-5" style="width: 30%; height: 50%;">
+            <div style="align-self: center;"><h4>Login</h4></div>
+            <form #MyForm="ngForm">
+
+                <div class="mb-5 mt-4"> 
+                    <input type="text" id="uName" placeholder="username" (ngModelChange)="isEditing()"  name="uname" [(ngModel)]="userName"required>
+                </div>
+                <div class="mb-4">
+                    <input type="password" id="pswd" placeholder="password" (ngModelChange)="isEditing()" name="psw"  [(ngModel)]= "password" required>
+                    <small *ngIf = isBtnClicked style="color: red;" > username or password incorrect</small>
+                </div>
+               
+                <div> 
+                    <button  (click) = loginBtnClicked() class="btnStyle rounded-pill z-depth-0 mt-5 " type="submit">Login</button>
+                </div>
+              
+            </form>
+        </div>
+    </div>
+</div>

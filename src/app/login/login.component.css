@@ -1,0 +1,41 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;   
+    }
+.shadow {
+        box-shadow: 0 .8rem 1rem rgba(0,0,0,.15)!important;
+}
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #968c8c;
+    width: 90%;
+}
+.btnStyle {
+    color: #fff;
+    background-color: #0b26bfd1 ;
+    border-color: rgb(13 110 253 / 25%);
+    width: -webkit-fill-available;
+}
+.mainTitle {
+    font-size: xxx-large;
+color: #808080;
+font-weight: lighter;
+}
+.welcomeText{
+    z-index: 100;
+    position: fixed;
+    height: 25%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+
+}
+.bringToFront{
+    z-index:100; 
+    position: fixed;
+}
